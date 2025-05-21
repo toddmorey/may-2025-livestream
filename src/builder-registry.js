@@ -30,6 +30,5 @@ Builder.registerComponent(Button, {
 });
 
 Builder.register("editor.settings", {
-  styleStrictMode: true,
   designTokens: designTokens,
 });
