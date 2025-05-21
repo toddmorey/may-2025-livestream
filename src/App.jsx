@@ -4,6 +4,7 @@ import StyleGuidePage from "./StyleGuidePage";
 import BuilderPage from "./builder-page";
 import ComponentsPage from "./ComponentsPage";
 import HomePage from "./HomePage";
+import ConferencePage from "./ConferencePage";
 
 function About() {
   return <h2>About Page</h2>;
@@ -18,6 +19,9 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/conference">Conference</Link>
+          </li>
+          <li>
             <Link to="/styleguide">Style Guide</Link>
           </li>
           <li>
@@ -28,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/conference" element={<ConferencePage />} />
         <Route path="/styleguide" element={<StyleGuidePage />} />
         <Route path="/components" element={<ComponentsPage />} />
         <Route path="*" element={<BuilderPage />} />
