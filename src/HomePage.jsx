@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div className="home-container">
       <header className="home-header">
-        <h1>Vimeo Design System</h1>
+        <h1>Sample Design System</h1>
         <p>
           Explore our design system and components used to build consistent and
           beautiful user interfaces.
