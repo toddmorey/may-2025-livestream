@@ -1,0 +1,31 @@
+@import './Tokens.css';
+
+body {
+  font-family: var(--font-family-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav {
+  background-color: var(--color-blue-primary);
+  color: var(--color-white);
+  padding: 1rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.main-nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+
