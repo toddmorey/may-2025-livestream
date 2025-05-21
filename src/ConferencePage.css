@@ -1,0 +1,547 @@
+.conference-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.conference-hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  max-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+  padding: var(--space-8);
+  background-image: url("/images/stage.avif");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.conference-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  z-index: 1;
+}
+
+.conference-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: var(--container-lg);
+  width: 100%;
+}
+
+.conference-title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  text-shadow: var(--text-shadow-default);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.conference-tagline {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-6);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conference-dates {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+  color: var(--color-blue-light);
+}
+
+.conference-format-badge {
+  display: inline-block;
+  background-color: var(--color-blue-primary);
+  color: var(--color-white);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-8);
+}
+
+.conference-cta {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  margin-top: var(--space-6);
+}
+
+/* Section Styles */
+.conference-section {
+  padding: var(--space-16) var(--space-4);
+}
+
+.conference-section-alt {
+  background-color: var(--color-dark-gray);
+}
+
+.conference-section-inner {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-bottom: var(--space-12);
+  color: var(--color-white);
+}
+
+/* Event Details Section */
+.conference-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-8);
+}
+
+.conference-detail-card {
+  background-color: var(--background-card);
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  border: var(--card-border);
+  padding: var(--card-padding);
+  height: 100%;
+}
+
+.detail-card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  color: var(--color-blue-primary);
+}
+
+.detail-card-content {
+  color: var(--text-color-default);
+}
+
+.detail-card-content p {
+  margin-bottom: var(--space-2);
+}
+
+.detail-card-list {
+  list-style-type: disc;
+  padding-left: var(--space-6);
+}
+
+.detail-card-list li {
+  margin-bottom: var(--space-2);
+}
+
+/* Conference Structure Section */
+.conference-structure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-8);
+  text-align: center;
+}
+
+.structure-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.structure-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+  overflow: hidden;
+}
+
+.structure-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.structure-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2);
+  color: var(--color-blue-primary);
+}
+
+.structure-description {
+  color: var(--text-color-subtle);
+}
+
+/* Key Themes Section */
+.conference-themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.theme-item {
+  background-color: var(--background-card);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  border-left: 4px solid var(--color-blue-primary);
+}
+
+.theme-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-3);
+  color: var(--color-white);
+}
+
+.theme-description {
+  color: var(--text-color-subtle);
+}
+
+/* Ticket Options Section */
+.conference-tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.ticket-card {
+  background-color: var(--background-card);
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: var(--card-border);
+}
+
+.ticket-header {
+  background-color: var(--color-blue-primary);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.ticket-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  margin-bottom: var(--space-2);
+}
+
+.ticket-price {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+.ticket-note {
+  font-size: var(--font-size-md);
+  color: var(--color-white);
+}
+
+.ticket-content {
+  padding: var(--space-6);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: var(--space-6);
+  flex-grow: 1;
+}
+
+.ticket-features li {
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-6);
+  position: relative;
+}
+
+.ticket-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-blue-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.ticket-cta {
+  margin-top: auto;
+}
+
+.ticket-addon {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+  font-size: var(--font-size-sm);
+}
+
+/* Workshops Section */
+.workshop-category {
+  margin-bottom: var(--space-12);
+}
+
+.category-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-6);
+  color: var(--color-blue-primary);
+  text-align: center;
+}
+
+.workshops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.workshop-card {
+  background-color: var(--background-card);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  height: 100%;
+  border: var(--card-border);
+}
+
+.workshop-time {
+  display: inline-block;
+  background-color: rgba(0, 173, 239, 0.2);
+  color: var(--color-blue-light);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-3);
+}
+
+.workshop-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2);
+  color: var(--color-white);
+}
+
+.workshop-description {
+  color: var(--text-color-subtle);
+  font-size: var(--font-size-sm);
+}
+
+/* Featured Speakers Section */
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.speaker-card {
+  background-color: var(--background-card);
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: var(--space-4);
+  border: var(--card-border);
+}
+
+.speaker-image-placeholder {
+  height: 200px;
+  background-color: rgba(0, 173, 239, 0.1);
+  margin-bottom: var(--space-4);
+  background-image: linear-gradient(
+    45deg,
+    var(--color-blue-dark),
+    var(--color-teal)
+  );
+}
+
+.speaker-name {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-1);
+  padding: 0 var(--space-2);
+  color: var(--color-white);
+}
+
+.speaker-role {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-400);
+  padding: 0 var(--space-2);
+}
+
+.speakers-footer {
+  text-align: center;
+  margin-top: var(--space-8);
+}
+
+.speakers-footer p {
+  margin-bottom: var(--space-4);
+  color: var(--text-color-subtle);
+}
+
+.speakers-cta {
+  margin-top: var(--space-4);
+}
+
+/* Special Features Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.feature-card {
+  background-color: var(--background-card);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  border: var(--card-border);
+}
+
+.feature-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2);
+  color: var(--color-white);
+}
+
+.feature-description {
+  color: var(--text-color-subtle);
+}
+
+/* Call to Action Section */
+.conference-cta-section {
+  padding: var(--space-16) var(--space-4);
+  background-color: var(--color-blue-primary);
+  text-align: center;
+  background-image:
+    linear-gradient(to right, rgba(0, 173, 239, 0.95), rgba(0, 193, 193, 0.95)),
+    url("/images/stage.avif");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.cta-content {
+  max-width: var(--container-md);
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  color: var(--color-white);
+}
+
+.cta-description {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-8);
+  color: var(--color-white);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .conference-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .conference-tagline {
+    font-size: var(--font-size-lg);
+  }
+
+  .section-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-8);
+  }
+
+  .conference-hero {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conference-hero {
+    padding: var(--space-4);
+    min-height: 400px;
+  }
+
+  .conference-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .conference-tagline {
+    font-size: var(--font-size-md);
+  }
+
+  .conference-dates {
+    font-size: var(--font-size-lg);
+  }
+
+  .conference-cta {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .conference-section {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .cta-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .cta-description {
+    font-size: var(--font-size-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .conference-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .conference-tagline {
+    font-size: var(--font-size-base);
+  }
+
+  .conference-dates {
+    font-size: var(--font-size-md);
+  }
+
+  .section-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .detail-card-title,
+  .structure-title,
+  .ticket-title,
+  .workshop-title,
+  .feature-title {
+    font-size: var(--font-size-md);
+  }
+}
