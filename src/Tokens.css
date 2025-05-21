@@ -2,8 +2,8 @@
 
 /*
  * VIMEO DESIGN SYSTEM TOKENS
- * 
- * This file contains all the design tokens needed to implement 
+ *
+ * This file contains all the design tokens needed to implement
  * Vimeo's employee communications platform design system.
  */
 
@@ -39,7 +39,7 @@
   /* Accent/Status Colors */
   --color-success: #00c176; /* Success green */
   --color-warning: #ffb44d; /* Warning orange */
-  --color-error: #ff2525; /* Error red */
+  --color-error: var(--color-purple); /* Error now uses purple */
   --color-info: #00adef; /* Info blue (same as primary) */
 }
 
