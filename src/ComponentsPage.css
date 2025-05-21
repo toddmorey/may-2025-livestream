@@ -1,0 +1,29 @@
+.sg-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem 2rem;
+}
+.sg-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border-subtle, #222);
+  padding-bottom: 1.5rem;
+}
+.sg-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.sg-btn-examples {
+  display: flex;
+  gap: var(--space-6, 1.5rem);
+  align-items: center;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  .sg-btn-examples {
+    flex-direction: column;
+    gap: var(--space-4, 1rem);
+    align-items: stretch;
+  }
+} 

@@ -153,7 +153,7 @@
   /* Component-specific spacing */
   --space-section: var(--space-24); /* Section spacing */
   --space-card-padding: var(--space-6); /* Card padding */
-  --space-button-padding-x: var(--space-6); /* Button horizontal padding */
+  --space-button-padding-x: var(--space-4); /* Button horizontal padding */
   --space-button-padding-y: var(--space-3); /* Button vertical padding */
 }
 
