@@ -1,0 +1,1 @@
+When applying styles, do not create any arbitrary values. Instead use only the tokens available as CSS variables.
