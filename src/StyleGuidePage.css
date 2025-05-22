@@ -26,9 +26,9 @@
   margin-bottom: 1.5rem;
 }
 .sg-sidebar nav a {
-  color: var(--color-blue-primary, #00adef);
+  color: var(--color-white);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.1rem;
   transition: color 0.2s;
 }
@@ -116,26 +116,44 @@ section h2 {
 .sg-color-swatches {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 0;
+  margin: 0 calc(-1 * var(--space-2));
+  gap: var(--space-4);
 }
 .sg-color-swatch {
-  min-width: 160px;
-  background: var(--background-card, #232323);
-  border-radius: var(--radius-md, 8px);
-  padding: 1rem 1rem 0.75rem 1.25rem;
-  margin-bottom: 0.5rem;
+  width: 140px;
+  min-width: 140px;
+  margin: var(--space-2);
+  background: var(--background-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
+  overflow: hidden;
 }
 .sg-color-chip {
-  width: 48px;
-  height: 32px;
-  border-radius: var(--radius-sm, 4px);
-  margin-bottom: 0.5rem;
-  border: 1px solid var(--border-subtle, #222);
+  width: 100%;
+  height: 48px;
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
 }
+.sg-token-label, .sg-token-var, .sg-token-value {
+  padding-left: var(--space-3);
+  margin-top: var(--space-2);
+  padding-right: var(--space-3);
+}
+
+.sg-token-var {
+  display: block;
+  font-size: 0.95em;
+  color: var(--text-color-muted, #aaa);
+  padding: 0;
+}
+
 .sg-spacing-scale {
   display: flex;
   flex-wrap: wrap;
@@ -177,7 +195,7 @@ section h2 {
 .sg-border-radius-demo {
   width: 48px;
   height: 32px;
-  background: var(--color-blue-primary, #00adef);
+  background: var(--background-card);
   border: 2px solid var(--color-white, #fff);
   margin-bottom: 0.5rem;
 }
@@ -228,20 +246,6 @@ section h2 {
   border-radius: var(--radius-sm, 4px);
   opacity: 0.7;
 }
-.sg-token-label {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
-}
-.sg-token-var {
-  color: var(--color-blue-primary, #00adef);
-  font-size: 0.95em;
-  margin-left: 0.5em;
-}
-.sg-token-value {
-  font-size: 0.95em;
-  color: var(--text-color-muted, #aaa);
-}
 .sg-typeface-block {
   margin-bottom: 2.5rem;
 }
@@ -282,5 +286,11 @@ section h2 {
   }
   .sg-main {
     padding: 1.5rem 0.5rem 2rem 0.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .sg-color-swatch {
+    width: 100%;
+    min-width: 0;
   }
 } 
